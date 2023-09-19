@@ -3,6 +3,7 @@
 	display: flex;
 	gap: 40%;
 	justify-content: center;
+	font-size: smaller;
 }
 
 .logo {
@@ -38,7 +39,7 @@
 .navitems p:not(:last-child):hover {
 	transform: scale(1.1);
 	cursor: pointer;
-	color: rgb(0, 255, 30); /* Change the color to red on hover */
+	color: #00ffa9; /* Change the color to red on hover */
 }
 .donate:hover {
 	background-color: red;

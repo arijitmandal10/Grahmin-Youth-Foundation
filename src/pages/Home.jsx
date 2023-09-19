@@ -2,14 +2,13 @@ import React from 'react';
 import homeimg3 from './assets/home-image-03.jpg';
 import homeimg4 from './assets/home-image-04.jpg';
 import styles from './styles/home.module.css';
-import Carousel from './Carousel';
-import MyCarousel from './MyCarousel';
+import MyCarousel from './Carousel';
 
 const Home = () => {
 	return (
 		<div>
 			{/* Top section */}
-			<div className={styles.main}>
+			<div id='home-section' className={styles.main}>
 				<div>
 					<h3>Because Only Together We Can</h3>
 					<div className={styles.hr}></div>
@@ -40,8 +39,62 @@ const Home = () => {
 			</div>
 
 			{/* Splide Section */}
-			<Carousel />
 			<MyCarousel />
+
+			{/* WHAT WE DO */}
+			<div id='what-we-do-section' className={styles.bottom}>
+				<h1>WHAT WE DO</h1>
+				<div className={styles.bottomcontainer}>
+					<div>
+						{' '}
+						<h2>We Find & Fund</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
+							aliqua ut enim ad minim veniam, quis nostrud.
+						</p>
+					</div>
+					<div>
+						{' '}
+						<h2>We Build Networks</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
+							aliqua ut enim ad minim veniam, quis nostrud.
+						</p>
+					</div>
+					<div>
+						{' '}
+						<h2> We Strengthen</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
+							aliqua ut enim ad minim veniam, quis nostrud.
+						</p>
+					</div>
+					<div>
+						{' '}
+						<h2>We Educate​</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
+							aliqua ut enim ad minim veniam, quis nostrud.
+						</p>
+					</div>
+					<div>
+						{' '}
+						<h2>We Provide Care​</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
+							aliqua ut enim ad minim veniam, quis nostrud.
+						</p>
+					</div>
+					<div>
+						{' '}
+						<h2>We Consult​</h2>{' '}
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
+							aliqua ut enim ad minim veniam, quis nostrud.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
