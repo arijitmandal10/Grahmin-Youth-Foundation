@@ -1,0 +1,40 @@
+/* Basic styling for the carousel container */
+.carouselContainer {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Styling for the carousel */
+.carousel {
+	display: flex;
+	width: 31em;
+	gap: 4px;
+	/* transition: transform 0.8s ease-in-out; */
+	animation: scroll 12s linear infinite;
+}
+
+/* Styling for individual carousel items (images) */
+.carousel img {
+	width: 100%;
+	height: auto;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0%);
+	}
+	25% {
+		transform: translateX(-25%);
+	}
+	50% {
+		transform: translateX(-50%);
+	}
+	75% {
+		transform: translateX(-75%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}

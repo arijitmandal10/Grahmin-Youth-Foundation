@@ -1,0 +1,48 @@
+.nav {
+	width: 98%;
+	display: flex;
+	gap: 40%;
+	justify-content: center;
+}
+
+.logo {
+	height: 150px;
+	transition: transform 0.3s ease, color 0.3s ease; /* Apply transitions for zoom and color change */
+}
+
+.logo:hover {
+	transform: scale(1.1); /* Slight zoom-in effect on hover */
+	color: red; /* Change the color to red on hover */
+	cursor: pointer;
+}
+
+.donate {
+	padding: 5px 20px;
+	color: white;
+	background: rgb(58, 255, 58);
+	border-radius: 20px;
+	border: 1px solid;
+}
+
+.navitems {
+	display: flex;
+	gap: 25px;
+	justify-content: space-between;
+}
+
+.navitems p {
+	transition: transform 0.3s ease, color 0.3s ease;
+	align-self: center;
+}
+
+.navitems p:not(:last-child):hover {
+	transform: scale(1.1);
+	cursor: pointer;
+	color: rgb(0, 255, 30); /* Change the color to red on hover */
+}
+.donate:hover {
+	background-color: red;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
