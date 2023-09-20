@@ -5,12 +5,13 @@ import styles from './styles/carousel.module.css';
 import splide1 from './assets/splide1.jpg';
 import splide2 from './assets/splide2.jpg';
 import splide3 from './assets/splide3.jpg';
-import splide4 from './assets/splide4.jpg';
+import splide6 from './assets/splide4.jpg';
 import splide5 from './assets/splide5.jpg';
+import splide4 from './assets/splide4.jpg';
 
 // Define an array of images
 const images1 = [splide1, splide2, splide3, splide4, splide5];
-const images2 = [splide1, splide2, splide3, splide4, splide5];
+const images2 = [splide1, splide2, splide3, splide6, splide5];
 const MyCarousel = () => {
 	return (
 		<div className={styles.carouselContainer}>
@@ -28,7 +29,7 @@ const MyCarousel = () => {
 							<img
 								style={{
 									height: '40em',
-									width: '80%',
+									width: '90%',
 									borderRadius: '40px',
 									boxShadow: 'black 2px 4px 10px 1px',
 									marginBottom: '10px',

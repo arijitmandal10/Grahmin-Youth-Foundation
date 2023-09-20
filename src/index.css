@@ -12,6 +12,17 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 }
+/* Define a new style for selected text */
+::selection {
+	background-color: red; /* Background color for selected text */
+	color: white; /* Text color for selected text */
+}
+
+/* Define a new style for selected text in older browsers */
+::-moz-selection {
+	background-color: red; /* Background color for selected text */
+	color: white; /* Text color for selected text */
+}
 
 a {
 	font-weight: 500;

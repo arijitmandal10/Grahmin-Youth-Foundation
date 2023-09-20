@@ -1,9 +1,8 @@
 .nav {
 	width: 98%;
 	display: flex;
-	gap: 40%;
-	justify-content: center;
-	font-size: smaller;
+	justify-content: space-evenly;
+	font-size: 17px;
 }
 
 .logo {
@@ -17,29 +16,56 @@
 	cursor: pointer;
 }
 
-.donate {
-	padding: 5px 20px;
-	color: white;
-	background: rgb(58, 255, 58);
-	border-radius: 20px;
-	border: 1px solid;
-}
-
-.navitems {
+.pages {
 	display: flex;
-	gap: 25px;
+	gap: 24px;
+	align-items: center;
 	justify-content: space-between;
 }
 
-.navitems p {
-	transition: transform 0.3s ease, color 0.3s ease;
+.pages > p {
+	transition: transform 0.1s ease, color 0.3s ease;
 	align-self: center;
 }
+.pages > p > a {
+	color: #000000b8;
+}
+.pages > a {
+	display: flex;
+}
+.pages p > a:hover {
+	color: #06c967;
+}
+.social > a > img {
+	transition: transform 0.2s ease, color 0.3s ease;
+	height: 25px;
+	align-self: center;
+}
+.social > a > img:hover {
+	transform: scale(1.1);
+}
+.social {
+	display: flex;
+	align-items: center;
+	gap: 17px;
+}
 
-.navitems p:not(:last-child):hover {
+.pages p:hover {
 	transform: scale(1.1);
 	cursor: pointer;
-	color: #00ffa9; /* Change the color to red on hover */
+	color: #06c967;
+	/* Change the color to red on hover */
+}
+
+.donate {
+	padding: 10px 23px;
+	font-size: 14px;
+	color: white;
+	background: rgb(6 201 103);
+	border-radius: 20px;
+	border: 1px solid;
+	height: fit-content;
+	align-self: center;
 }
 .donate:hover {
 	background-color: red;

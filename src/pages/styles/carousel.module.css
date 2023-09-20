@@ -40,3 +40,10 @@
 		transform: translateX(0%);
 	}
 }
+
+.carousel2 {
+	width: 80%;
+	padding-bottom: 16px;
+	margin: auto;
+	border-bottom: 3px solid;
+}
