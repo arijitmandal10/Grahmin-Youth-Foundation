@@ -8,10 +8,17 @@ import splide3 from './assets/splide3.jpg';
 import splide6 from './assets/splide4.jpg';
 import splide5 from './assets/splide5.jpg';
 import splide4 from './assets/splide4.jpg';
+import splide7 from './assets/splide7.jpg';
+import splide8 from './assets/splide8.jpg';
 
 // Define an array of images
 const images1 = [splide1, splide2, splide3, splide4, splide5];
-const images2 = [splide1, splide2, splide3, splide6, splide5];
+const images = [
+	[splide1, splide2],
+	[splide3, splide4],
+	[splide5, splide6],
+	[splide7, splide8],
+];
 const MyCarousel = () => {
 	return (
 		<div className={styles.carouselContainer}>
@@ -21,22 +28,36 @@ const MyCarousel = () => {
 				))}
 			</div>
 
-			<div className={styles.carousel2}>
-				{' '}
-				<Carousel showArrows={true} infiniteLoop={true} autoPlay={true} interval={2000} showThumbs={false}>
-					{images2.map((image, index) => (
-						<div key={index}>
-							<img
-								style={{
-									height: '40em',
-									width: '90%',
-									borderRadius: '40px',
-									boxShadow: 'black 2px 4px 10px 1px',
-									marginBottom: '10px',
-								}}
-								src={image}
-								alt={`Image ${index + 1}`}
-							/>
+			<div className={styles.team}>
+				<div id='team' className='heading' style={{ marginBottom: '0px' }}>
+					Team
+				</div>
+				<div className='hr' style={{ background: 'red' }}></div>
+				<div></div>
+			</div>
+
+			<div className={styles.carousel2} id='gallery'>
+				<div className='heading'>Gallery</div>
+				<div className='hr'></div>
+				<Carousel showArrows={false} infiniteLoop={true} autoPlay={true} interval={2000} showThumbs={false}>
+					{images.map((pair, index) => (
+						<div key={index} className={styles.imagePair}>
+							{pair.map((image, subIndex) => (
+								<div key={subIndex} className='image-container'>
+									<img
+										style={{
+											borderRadius: '20px',
+											height: '80vh',
+											width: '700px',
+
+											// boxShadow: 'black 2px 4px 10px 1px',
+											marginBottom: '10px',
+										}}
+										src={image}
+										alt={`Image ${index + 1}-${subIndex + 1}`}
+									/>
+								</div>
+							))}
 						</div>
 					))}
 				</Carousel>

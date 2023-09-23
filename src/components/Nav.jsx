@@ -20,31 +20,37 @@ const Nav = () => {
 			</div>
 
 			<div className={styles.pages}>
-				<p>Home</p>
-				<p onClick={() => scrollToSection('what-we-do-section')}>What We Do</p>
-				<p>Team</p>
-				<p>Projects</p>
-				<p>Media</p>
 				<p>
 					{' '}
-					<a href='https://docs.google.com/forms/d/e/1FAIpQLSfoC4CUchliaF8jNuEDxFhfSLdxofYEqqijrAVAqboBsSVasg/viewform?vc=0&c=0&w=1&flr=0'>
+					<a href='/'>Home</a>
+				</p>
+				<p onClick={() => scrollToSection('what-we-do-section')}>What We Do</p>
+				<p onClick={() => scrollToSection('team')}>Team</p>
+				<p>Projects</p>
+				<p onClick={() => scrollToSection('gallery')}>Gallery</p>
+				<p>
+					{' '}
+					<a
+						href='https://docs.google.com/forms/d/e/1FAIpQLScWm4TeqOOx31VfIUUcC6-2yRZibfH-Mm6SncgnMZ5hijq29w/viewform?vc=0&c=0&w=1&flr=0'
+						target='_blank'
+					>
 						Join Us
 					</a>
 				</p>
-				<p>Contact Us</p>
+				<p onClick={() => scrollToSection('contact-section')}>Contact Us</p>
 			</div>
 
 			<div className={styles.social}>
-				<a href=''>
+				<a href='https://twitter.com/graminyouth_ngo' target='_blank'>
 					<img src='https://about.twitter.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png' alt='X' />
 				</a>
-				<a href=''>
+				<a href='https://www.instagram.com/graminyouth_ngo/' target='_blank'>
 					<img src={insta} alt='Insta' />
 				</a>
-				<a href=''>
+				<a href='https://www.linkedin.com/in/gramin-youth-foundation-267453262/' target='_blank'>
 					<img src={linkdin} alt='' />
 				</a>
-				<a href=''>
+				<a href='https://www.youtube.com/@graminyouthtv' target='_blank'>
 					<img style={{ height: '35px' }} src={youtube} alt='' />
 				</a>
 			</div>

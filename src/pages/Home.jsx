@@ -1,27 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-import { useInView } from 'react-intersection-observer';
-
+import React from 'react';
 import styles from './styles/home.module.css';
 import MyCarousel from './Carousel';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Home = () => {
-	const [ref, inView] = useInView({
-		triggerOnce: true, // Only trigger once when the section comes into view
-		threshold: 0.1, // You can adjust the threshold as needed
-	});
-
-	const fadeInRef = useRef(null);
-
-	useEffect(() => {
-		if (inView) {
-			// When the section comes into view, add the fadeIn class to trigger the animation
-			fadeInRef.current.classList.add(styles.fadeIn);
-		}
-	}, [inView]);
 	return (
 		<div>
 			{/* Top section */}
@@ -39,7 +20,7 @@ const Home = () => {
 				<h1>About Us</h1>
 				<div className={styles.hr} style={{ width: '10%', background: 'red' }}></div>
 				<div>
-					<p ref={fadeInRef}>
+					<p>
 						Gramin youth foundation is a non-profit youth led organisation working for the upliftment of rural youth. We work
 						towards empowering them with skills and knowledge so that they can lead a better life. <br /> <br />
 						The organisation was started in 2020 with a small team of dedicated individuals who were passionate about making a
@@ -68,50 +49,51 @@ const Home = () => {
 				<div className={styles.bottomcontainer}>
 					<div>
 						{' '}
-						<h2>We Find & Fund</h2>
+						<h2>Education Access</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
-							aliqua ut enim ad minim veniam, quis nostrud.
+							We believe that education is the cornerstone of empowerment. Our initiatives focus on ensuring that every young
+							person has access to quality education.
 						</p>
 					</div>
 					<div>
 						{' '}
-						<h2>We Build Networks</h2>
+						<h2>Skills Development</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
-							aliqua ut enim ad minim veniam, quis nostrud.
+							We offer a range of skill-building workshops and training programs, equipping young individuals with the practical
+							skills they need to excel in various fields.
+						</p>
+					</div>
+
+					<div>
+						{' '}
+						<h2> Entrepreneurship Support</h2>
+						<p>
+							We foster an entrepreneurial spirit among the youth, providing mentorship, seed funding, and resources to help turn
+							innovative ideas into successful ventures.
 						</p>
 					</div>
 					<div>
 						{' '}
-						<h2> We Strengthen</h2>
+						<h2>Career Counseling</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
-							aliqua ut enim ad minim veniam, quis nostrud.
+							We believe in providing comprehensive support to ensure your success in the job market and take the next step in
+							your career journey.
 						</p>
 					</div>
 					<div>
 						{' '}
-						<h2>We Educate​</h2>
+						<h2>Networking Opportunities​</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
-							aliqua ut enim ad minim veniam, quis nostrud.
+							Connect with industry professionals, potential employers, and fellow job seekers through our networking events and
+							workshops.
 						</p>
 					</div>
 					<div>
 						{' '}
-						<h2>We Provide Care​</h2>
+						<h2>Leadership Development​</h2>{' '}
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
-							aliqua ut enim ad minim veniam, quis nostrud.
-						</p>
-					</div>
-					<div>
-						{' '}
-						<h2>We Consult​</h2>{' '}
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna
-							aliqua ut enim ad minim veniam, quis nostrud.
+							Through leadership training, mentorship programs, and community involvement, we nurture the next generation of
+							confident and capable leaders.
 						</p>
 					</div>
 				</div>
