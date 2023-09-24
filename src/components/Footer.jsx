@@ -30,14 +30,14 @@ const Footer = () => {
 
 					<div className={styles.address}>
 						<div>
-							<h4>Get In touch</h4>
+							<h4>🌐 Get In touch</h4>
 							<p>
 								Thank you for visiting our page! If you have any questions or would like to get in touch with us, please don’t
 								hesitate to reach out. You can contact me by email at{' '}
 								<a style={{ color: '#49ff7f' }} href='mailto:graminyouth.org@gmail.com'>
-									graminyouth.org@gmail.com
+									📧 graminyouth.org@gmail.com
 								</a>{' '}
-								&nbsp; , by phone, or by filling out the contact form below. I look forward to hearing from you!
+								&nbsp; , by phone, or by filling out the contact form. I look forward to hearing from you!
 							</p>
 							<h4>🏢 Address</h4>
 							<p>

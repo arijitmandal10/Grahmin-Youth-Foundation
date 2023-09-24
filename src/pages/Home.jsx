@@ -49,7 +49,7 @@ const Home = () => {
 				<div className={styles.bottomcontainer}>
 					<div>
 						{' '}
-						<h2>Education Access</h2>
+						<h2>📖 Education Access</h2>
 						<p>
 							We believe that education is the cornerstone of empowerment. Our initiatives focus on ensuring that every young
 							person has access to quality education.
@@ -57,7 +57,7 @@ const Home = () => {
 					</div>
 					<div>
 						{' '}
-						<h2>Skills Development</h2>
+						<h2>🥇 Skills Development</h2>
 						<p>
 							We offer a range of skill-building workshops and training programs, equipping young individuals with the practical
 							skills they need to excel in various fields.
@@ -66,7 +66,7 @@ const Home = () => {
 
 					<div>
 						{' '}
-						<h2> Entrepreneurship Support</h2>
+						<h2>🫴 Entrepreneurship Support</h2>
 						<p>
 							We foster an entrepreneurial spirit among the youth, providing mentorship, seed funding, and resources to help turn
 							innovative ideas into successful ventures.
@@ -74,7 +74,7 @@ const Home = () => {
 					</div>
 					<div>
 						{' '}
-						<h2>Career Counseling</h2>
+						<h2>🏃‍♂️ Career Counseling</h2>
 						<p>
 							We believe in providing comprehensive support to ensure your success in the job market and take the next step in
 							your career journey.
@@ -82,7 +82,7 @@ const Home = () => {
 					</div>
 					<div>
 						{' '}
-						<h2>Networking Opportunities​</h2>
+						<h2>🌐 Networking Opportunities​</h2>
 						<p>
 							Connect with industry professionals, potential employers, and fellow job seekers through our networking events and
 							workshops.
@@ -90,7 +90,7 @@ const Home = () => {
 					</div>
 					<div>
 						{' '}
-						<h2>Leadership Development​</h2>{' '}
+						<h2>📌 Leadership Development​</h2>{' '}
 						<p>
 							Through leadership training, mentorship programs, and community involvement, we nurture the next generation of
 							confident and capable leaders.
@@ -107,7 +107,7 @@ const Home = () => {
 				<div className={styles.storiesContent}>
 					<div>
 						<h3>
-							<h1>🍃</h1>
+							<p>🍃</p>
 							Jane’s Been A Migrant Worker Since She Was 12
 						</h3>
 						<p>
@@ -117,7 +117,7 @@ const Home = () => {
 					</div>
 					<div>
 						<h3>
-							<h1>🍃</h1>A Brighter Future — For Cambodia’s Children​
+							<p>🍃</p>A Brighter Future — For Cambodia’s Children​
 						</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore

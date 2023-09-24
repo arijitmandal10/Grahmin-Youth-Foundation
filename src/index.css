@@ -115,6 +115,8 @@ textarea:focus {
 	.heading {
 		font-size: 30px;
 	}
-
+	.hr {
+		margin-bottom: 20px;
+	}
 	/* You can include any other responsive styles here */
 }

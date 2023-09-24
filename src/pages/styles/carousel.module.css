@@ -58,7 +58,7 @@
 	padding-inline: 10px;
 	border-bottom: 3px solid;
 	margin-bottom: 10px;
-	box-shadow: 1px 1px 16px black;
+	/* box-shadow: 1px 1px 16px black; */
 }
 .imagePair {
 	display: flex;
@@ -79,5 +79,8 @@
 		display: flex;
 		justify-content: center;
 		gap: 20px;
+	}
+	.carouselmain {
+		display: none;
 	}
 }

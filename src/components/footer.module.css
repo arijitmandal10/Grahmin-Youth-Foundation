@@ -98,13 +98,14 @@
 	border-bottom: 1px solid white;
 	border-bottom-right-radius: 10px;
 	font-size: 17px;
-	background: #daffff21;
+	/* background: #daffff21; */
 }
 textarea {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	padding: 10px;
 	font-size: 17px;
-	background: #daffff21;
+	background: none;
+	/* background: #daffff21; */
 	color: white;
 	border: none;
 	border-bottom: 1px solid white;
@@ -124,6 +125,7 @@ textarea {
 	}
 	.details > form {
 		width: 100%;
+		height: 27vh;
 	}
 	.address {
 		width: 100%;
