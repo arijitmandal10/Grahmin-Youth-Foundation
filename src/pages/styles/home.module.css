@@ -202,3 +202,63 @@
 .storiesContent > div > h3 > h1 {
 	margin-top: 0px;
 }
+
+/* Styles for screens with a maximum width of 768 pixels (typical for small screens) */
+@media (max-width: 768px) {
+	/* Add your CSS styles for small screens here */
+	body {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 100%;
+	}
+	.main {
+		height: fit-content;
+	}
+
+	.main > div > h1 {
+		font-size: 24px;
+		line-height: 45px;
+	}
+	.main > div > h3 {
+		font-size: 20px;
+	}
+	.mid > div > p {
+		width: 94%;
+		font-size: 10px;
+		margin-bottom: 50px;
+	}
+	.mid {
+		height: auto;
+	}
+	.mid > h1 {
+		font-size: large;
+	}
+	.bottom {
+		width: 98%;
+	}
+	.bottom > h1 {
+		font-size: x-large;
+	}
+	.bottomcontainer div {
+		width: auto;
+	}
+	.bottomcontainer {
+		gap: 0px;
+	}
+	.stories > h1 {
+		font-size: x-large;
+	}
+	.storiesContent {
+		width: auto;
+		gap: 15px;
+	}
+	.storiesContent div h3 {
+		font-size: inherit;
+	}
+	.storiesContent div > p {
+		font-size: smaller;
+	}
+	/* You can include any other responsive styles here */
+}

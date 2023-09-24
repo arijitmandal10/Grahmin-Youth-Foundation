@@ -104,3 +104,20 @@ textarea:focus {
 .thumbs-wrapper {
 	z-index: 2; /* Increase the z-index to make arrows appear on top of images */
 }
+
+/* Styles for screens with a maximum width of 768 pixels (typical for small screens) */
+@media (max-width: 768px) {
+	/* Add your CSS styles for small screens here */
+	body {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 100%;
+	}
+	.heading {
+		font-size: 30px;
+	}
+
+	/* You can include any other responsive styles here */
+}

@@ -14,7 +14,7 @@ const Footer = () => {
 						Your contribution is an investment in a brighter future, not only for the individuals we serve, but for our community
 						and society as a whole.
 					</p>
-					<p className={styles.donate}>Donate</p>
+					<p className={styles.donate}> Donate</p>
 				</div>
 			</div>
 			<div id='contact-section' className={styles.contact}>
@@ -33,20 +33,22 @@ const Footer = () => {
 							<h4>Get In touch</h4>
 							<p>
 								Thank you for visiting our page! If you have any questions or would like to get in touch with us, please don’t
-								hesitate to reach out. You can contact me by email at &nbsp;
-								<a style={{ color: '#49ff7f' }} href='graminyouth.org@gmail.com'>
+								hesitate to reach out. You can contact me by email at{' '}
+								<a style={{ color: '#49ff7f' }} href='mailto:graminyouth.org@gmail.com'>
 									graminyouth.org@gmail.com
-								</a>
-								, by phone, or by filling out the contact form below. I look forward to hearing from you!
+								</a>{' '}
+								&nbsp; , by phone, or by filling out the contact form below. I look forward to hearing from you!
 							</p>
-							<h4>My Address</h4>
+							<h4>🏢 Address</h4>
 							<p>
 								<b>Registered Office </b>: Sobhan, Shankarpur, Darbhanga, Bihar PIN- 846005 <br />
 								<br />
 								<b>Bangalore Office</b> : No. 10, MRJ Colony, Near Om Shakti Temple, Mathikere, Bangalore-560054
 							</p>
-							<p>9632904382</p>
-							<p>graminyouth.org@gmail.com</p>
+							<p>☎️ 9632904382</p>
+							<a style={{ color: '#49ff7f', fontSize: 'smaller' }} href='mailto:graminyouth.org@gmail.com'>
+								📧 graminyouth.org@gmail.com
+							</a>{' '}
 						</div>
 					</div>
 				</div>

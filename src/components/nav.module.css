@@ -73,3 +73,18 @@
 	color: white;
 	cursor: pointer;
 }
+/* Styles for screens with a maximum width of 768 pixels (typical for small screens) */
+@media (max-width: 768px) {
+	.nav {
+		justify-content: space-between;
+	}
+	.pages {
+		display: none;
+	}
+	.social {
+		display: none;
+	}
+	.logo {
+		height: 100px;
+	}
+}

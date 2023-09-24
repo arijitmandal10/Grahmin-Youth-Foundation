@@ -43,14 +43,12 @@ const MyCarousel = () => {
 					{images.map((pair, index) => (
 						<div key={index} className={styles.imagePair}>
 							{pair.map((image, subIndex) => (
-								<div key={subIndex} className='image-container'>
+								<div key={subIndex} className={styles.imageContainer}>
 									<img
 										style={{
-											borderRadius: '20px',
-											height: '80vh',
-											width: '700px',
-
-											// boxShadow: 'black 2px 4px 10px 1px',
+											borderRadius: '10px',
+											height: window.innerWidth <= 768 ? '20vh' : '80vh', // Change height for small screens
+											width: window.innerWidth <= 768 ? '180px' : '750px', // Change width for small screens
 											marginBottom: '10px',
 										}}
 										src={image}

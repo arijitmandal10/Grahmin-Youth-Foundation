@@ -65,3 +65,19 @@
 	justify-content: center;
 	gap: 30px;
 }
+
+/* Styles for screens with a maximum width of 768 pixels (typical for small screens) */
+@media (max-width: 768px) {
+	/* Add your CSS styles for small screens here */
+	.carousel > img {
+		height: 12em;
+	}
+	.team {
+		height: auto;
+	}
+	.imagePair {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+}
