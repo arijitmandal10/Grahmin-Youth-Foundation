@@ -45,11 +45,6 @@ const MyCarousel = () => {
 					<Diversity2Icon style={{ fontSize: '40px' }} /> Team
 				</div>
 				<div className='hr' style={{ background: 'red' }}></div>
-				{/* <div className={styles.carousel}>
-					{images1.map((image, index) => (
-						<img key={index} src={image} alt={`Image ${index + 1}`} className={styles.carouselImage} />
-					))}
-				</div> */}
 			</div>
 
 			<div className={styles.carousel2} id='gallery'>
