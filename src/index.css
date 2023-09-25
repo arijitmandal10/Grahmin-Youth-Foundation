@@ -54,8 +54,7 @@ body {
 	/* display: flex;
 	place-items: center; */
 	/* background: linear-gradient(15deg, #20fc7b, transparent); */
-	background: linear-gradient(15deg, #20fc7ba8, transparent);
-
+	/* background: linear-gradient(15deg, #fc2020a8, transparent); */
 	min-width: 320px;
 	min-height: 100vh;
 }
@@ -114,10 +113,17 @@ textarea:focus {
 		width: 100%;
 	}
 	.heading {
-		font-size: 30px;
+		font-size: x-large;
 	}
 	.hr {
 		margin-bottom: 20px;
 	}
 	/* You can include any other responsive styles here */
+}
+.visible-on-small {
+	display: block;
+}
+
+.hidden-on-small {
+	display: none;
 }

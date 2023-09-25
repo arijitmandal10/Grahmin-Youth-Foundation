@@ -15,22 +15,6 @@
 	/* transition: transform 0.8s ease-in-out; */
 	animation: scroll 12s linear infinite;
 }
-
-/* Styling for individual carousel items (images) */
-.carousel img {
-	width: 100%;
-	height: auto;
-}
-.team {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-block: 20px;
-	border: 1px solid;
-	padding: 10px;
-	height: 80vh;
-}
-
 @keyframes scroll {
 	0% {
 		transform: translateX(0%);
@@ -48,6 +32,19 @@
 		transform: translateX(0%);
 	}
 }
+/* Styling for individual carousel items (images) */
+.carousel img {
+	width: 100%;
+	height: auto;
+}
+.team {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-block: 20px;
+	padding: 10px;
+	height: 80vh;
+}
 
 .carousel2 {
 	display: flex;
@@ -56,8 +53,7 @@
 	align-items: center;
 	padding-bottom: 16px;
 	padding-inline: 10px;
-	border-bottom: 3px solid;
-	margin-bottom: 10px;
+
 	/* box-shadow: 1px 1px 16px black; */
 }
 .imagePair {
@@ -74,6 +70,7 @@
 	}
 	.team {
 		height: auto;
+		margin-top: 0px;
 	}
 	.imagePair {
 		display: flex;
