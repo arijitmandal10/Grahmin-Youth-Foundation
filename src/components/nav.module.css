@@ -1,8 +1,13 @@
 .nav {
-	width: 98%;
+	/* position: sticky;
+	top: 0;
+	z-index: 1;
+	background: #ffffff;
+	box-shadow: 10px 4px 13px 0px black; */
+	width: 100%;
 	display: flex;
+	margin-bottom: 20px;
 	justify-content: space-evenly;
-	font-size: 17px;
 }
 
 .logo {
@@ -55,6 +60,14 @@
 	cursor: pointer;
 	color: #06c967;
 	/* Change the color to red on hover */
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9); /* You can adjust the background color and opacity as needed. */
+	z-index: 1000; /* Ensure it's above other content */
 }
 
 .donate {

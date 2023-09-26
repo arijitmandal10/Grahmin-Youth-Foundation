@@ -16,7 +16,7 @@ const Footer = () => {
 						Your contribution is an investment in a brighter future, not only for the individuals we serve, but for our community
 						and society as a whole.
 					</p>
-					<p className={styles.donate}> Donate</p>
+					<p className={styles.donate}> Contribute</p>
 				</div>
 			</div>
 			<div id='contact-section' className={styles.contact}>

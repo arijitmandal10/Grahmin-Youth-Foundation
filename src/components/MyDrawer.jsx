@@ -6,7 +6,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-// import LinkIcon from '@mui/icons-material/Link';
+import { Link } from 'react-router-dom'; // Import the Link component
 
 function MyDrawer({ navItems, scrollToSection, socialMediaLinks }) {
 	const [open, setOpen] = useState(false);
@@ -22,8 +22,11 @@ function MyDrawer({ navItems, scrollToSection, socialMediaLinks }) {
 	function handleItemClick(item) {
 		if (item.isExternal) {
 			window.open(item.target, '_blank'); // Open external link in a new tab
+		} else if (item.target === '/' || item.target === '/team') {
+			toggleDrawer(); // Close the drawer when  or Team is clicked
 		} else {
-			scrollToSection(item.target); // Scroll to section for internal links
+			toggleDrawer(); // Close the drawer when any other link is clicked
+			scrollToSection(item.target);
 		}
 	}
 
@@ -33,13 +36,19 @@ function MyDrawer({ navItems, scrollToSection, socialMediaLinks }) {
 				<MenuIcon style={iconStyle} />
 			</IconButton>
 			<Drawer open={open} onClose={toggleDrawer} style={{ opacity: '0.8' }}>
-				<div style={{ width: 150, background: 'green', color: 'white', height: 'inherit' }}>
+				<div style={{ width: 150, background: 'black', color: 'white', height: 'inherit' }}>
 					{' '}
 					{/* Set the width as needed */}
 					<List>
 						{navItems.map((item) => (
 							<ListItem button key={item.text} onClick={() => handleItemClick(item)}>
-								<ListItemText primary={item.text} />
+								{(item.target === '/' || item.target === '/team') && !item.isExternal ? (
+									<Link to={item.target} style={{ textDecoration: 'none', color: 'inherit' }}>
+										<ListItemText primary={item.text} />
+									</Link>
+								) : (
+									<ListItemText primary={item.text} />
+								)}
 							</ListItem>
 						))}
 						{socialMediaLinks.map((item, index) => (

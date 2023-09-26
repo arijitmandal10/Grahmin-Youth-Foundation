@@ -4,14 +4,16 @@ import logo from '../assets/logo.png';
 import insta from '../assets/insta.png';
 import linkdin from '../assets/linkdin.png';
 import youtube from '../assets/youtube.png';
+import X from '../assets/X.png';
 import MyDrawer from './MyDrawer';
 import useMediaQuery from '@mui/material/useMediaQuery'; // Import the useMediaQuery hook from Material-UI
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
 	const navItems = [
-		{ text: 'Home', target: 'nav' },
+		{ text: 'Home', target: '/' },
 		{ text: 'About Us', target: 'about-us' },
-		{ text: 'Team', target: 'team' },
+		{ text: 'Team', target: '/team' },
 		{ text: 'Projects', target: '/projects' },
 		{
 			text: 'Join Us',
@@ -26,7 +28,7 @@ const Nav = () => {
 		{
 			text: 'Twitter',
 			url: 'https://twitter.com/graminyouth_ngo',
-			icon: 'https://about.twitter.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png',
+			icon: X,
 		},
 		{
 			text: 'Instagram',
@@ -59,15 +61,16 @@ const Nav = () => {
 				{isSmallScreen && <MyDrawer navItems={navItems} scrollToSection={scrollToSection} socialMediaLinks={socialMediaLinks} />}
 			</div>
 			<div>
-				<img src={logo} alt='' className={styles.logo} />
+				<Link to='/'>
+					<img src={logo} alt='' className={styles.logo} />
+				</Link>
 			</div>
 			<div className={styles.pages}>
+				<p onClick={() => scrollToSection('about-us')}>About Us</p>
 				<p>
 					{' '}
-					<a href='/'>Home</a>
+					<Link to='/team'>Team</Link>{' '}
 				</p>
-				<p onClick={() => scrollToSection('about-us')}>About Us</p>
-				<p onClick={() => scrollToSection('team')}>Team</p>
 				<p>Projects</p>
 				<p onClick={() => scrollToSection('gallery')}>Gallery</p>
 				<p>

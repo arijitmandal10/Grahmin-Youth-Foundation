@@ -11,8 +11,9 @@ import splide4 from './assets/splide4.jpg';
 import splide7 from './assets/splide7.jpg';
 import splide8 from './assets/splide8.jpg';
 import splide9 from './assets/splide9.jpg';
-import Diversity2Icon from '@mui/icons-material/Diversity2';
+// import Diversity2Icon from '@mui/icons-material/Diversity2';
 import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
+// import Team from '../components/Team';
 
 // Define an array of images
 const images1 = [splide1, splide9, splide3, splide4, splide5, splide7, splide8];
@@ -40,12 +41,13 @@ const MyCarousel = () => {
 
 	return (
 		<div className={styles.carouselContainer}>
-			<div className={styles.team}>
+			{/* <div className={styles.team}>
 				<div id='team' className='heading' style={{ marginBottom: '0px' }}>
 					<Diversity2Icon style={{ fontSize: '40px' }} /> Team
 				</div>
 				<div className='hr' style={{ background: 'red' }}></div>
-			</div>
+				<Team />
+			</div> */}
 
 			<div className={styles.carousel2} id='gallery'>
 				<div className='heading'>

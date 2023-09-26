@@ -59,7 +59,7 @@
 }
 
 .contact {
-	background: navajowhite;
+	background: #0000006b;
 	width: 90%;
 	color: black;
 	margin: auto;
@@ -127,9 +127,9 @@ textarea {
 
 		font-size: small;
 	}
-	.contact {
+	/* .contact {
 		background: #03a554;
-	}
+	} */
 
 	.cr {
 		font-size: x-small;

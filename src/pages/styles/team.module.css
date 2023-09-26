@@ -1,0 +1,49 @@
+.team {
+	/* border: 1px solid; */
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 30px;
+}
+.box {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 40vh;
+	border-bottom: 1px solid;
+	padding: 10px;
+}
+.members {
+	display: flex;
+	padding: 10px;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/* border: 1px solid; */
+	min-height: 35vh;
+}
+.members > div {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	align-items: center;
+	min-height: 30vh;
+	box-shadow: 1px 1px 8px black;
+	width: 17%;
+}
+.members > div > img {
+	height: 35vh;
+	width: 100%;
+}
+@media (max-width: 768px) {
+	.members {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.members > div {
+		width: auto;
+	}
+}
