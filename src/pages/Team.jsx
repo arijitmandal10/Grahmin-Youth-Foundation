@@ -23,6 +23,8 @@ import v5 from './assets/v5.jpg';
 import v7 from './assets/v7.jpg';
 import v8 from './assets/v8.jpg';
 import v9 from './assets/v9.jpg';
+import v10 from './assets/v9.jpg';
+
 import vs1 from './assets/vs1.jpg';
 import vs3 from './assets/vs3.png';
 
@@ -135,6 +137,10 @@ const Team = () => {
 					<div>
 						<img src={v7} alt='' />
 						<p>Lawrence Engti</p>
+					</div>{' '}
+					<div>
+						<img src={v10} alt='' />
+						<p>Ankit Srivastava</p>
 					</div>{' '}
 					<div>
 						<img src={v8} alt='' />
