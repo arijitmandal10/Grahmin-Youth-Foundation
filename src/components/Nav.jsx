@@ -13,7 +13,7 @@ const Nav = () => {
 	const navItems = [
 		{ text: 'Home', target: '/' },
 		{ text: 'About Us', target: 'about-us' },
-		{ text: 'Team', target: '/team' },
+		{ text: 'Our Team', target: '/team' },
 		{ text: 'Projects', target: '/projects' },
 		{
 			text: 'Join Us',
@@ -69,7 +69,7 @@ const Nav = () => {
 				<p onClick={() => scrollToSection('about-us')}>About Us</p>
 				<p>
 					{' '}
-					<Link to='/team'>Team</Link>{' '}
+					<Link to='/team'>Our Team</Link>{' '}
 				</p>
 				<p>Projects</p>
 				<p onClick={() => scrollToSection('gallery')}>Gallery</p>

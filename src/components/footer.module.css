@@ -1,9 +1,9 @@
 .footer {
 	background: url('../assets/footer.jpg');
-	height: 90vh;
+	height: 80vh;
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+	/* margin-top: 50px; */
 	align-items: center;
 	color: white;
 	overflow: visible;
@@ -59,7 +59,7 @@
 }
 
 .contact {
-	background: #0000006b;
+	background: #baf9ff6b;
 	width: 90%;
 	color: black;
 	margin: auto;

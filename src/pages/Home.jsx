@@ -10,6 +10,8 @@ import Groups3Icon from '@mui/icons-material/Groups3';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import BadgeIcon from '@mui/icons-material/Badge';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel styles
 const Home = () => {
 	return (
 		<div>
@@ -127,55 +129,65 @@ const Home = () => {
 			<div className={styles.stories}>
 				<h1> Volunteer Speak</h1>
 				<div className={styles.hr} style={{ background: 'red', width: '10%', marginBottom: '37px' }}></div>
-				<div className={styles.storiesContent}>
-					<div>
-						<img src={vs1} alt='' />
-						<p>
-							Interning as a front-end developer at GYF was an incredible experience. I had the opportunity to work on projects
-							that directly contributed to the Organization's mission. From redesigning the website for better user experience to
-							implementing interactive features, every task felt purposeful. <br />
-							<br /> This internship not only honed my technical skills but also taught me the power of technology in driving
-							positive change.
-						</p>
-						<h5>
-							Arjit Mandal <br />
-							BCA batch- 2018-2021 <br />
-							Ramaiah College of Arts, Science & Commerce{' '}
-						</h5>
+				{/* <div > */}{' '}
+				<Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay>
+					<div className={styles.storiesContent}>
+						<div>
+							<img src={vs1} alt='' />
+							<p>
+								Interning as a front-end developer at GYF was an incredible experience. I had the opportunity to work on
+								projects that directly contributed to the Organization's mission. From redesigning the website for better user
+								experience to implementing interactive features, every task felt purposeful. <br />
+								<br /> This internship not only honed my technical skills but also taught me the power of technology in
+								driving positive change.
+							</p>
+							<h5>
+								Arjit Mandal <br />
+								BCA batch- 2018-2021 <br />
+								Ramaiah College of Arts, Science & Commerce
+							</h5>
+						</div>
 					</div>
-					<div>
-						<img src='' alt='image' />{' '}
-						<p>
-							Volunteering with GYF has been a life-changing experience. The sense of fulfillment I get from contributing to
-							their initiatives is immeasurable. From participating in community outreach programs to assisting with fundraising
-							events, every moment has been meaningful. <br />
-							<br />
-							The warmth and gratitude I receive from those we help is truly humbling. Gramin Youth Foundation is an organization
-							that embodies compassion, and I am grateful to be a part of their mission.
-						</p>
-						<h5>
-							Nochetlong Tzudir <br />
-							M.A (History) Batch-2022-24 <br />
-							Amity University, UP
-						</h5>
-					</div>
-					<div>
-						<img src={vs3} alt='' />
 
-						<p>
-							Being part of the cricket match organizing team at GYF was an exhilarating experience. From setting up the pitch to
-							coordinating teams and ensuring a smooth event, every moment was filled with excitement. <br />
-							<br /> GYF not only promotes the sport but also uses it as a platform for community engagement. I'm grateful for
-							the opportunity to be a part of such an impactful initiative.
-						</p>
-						<h5>
-							Deep Narayan Sharma <br />
-							Software Engineer at Donyati
-						</h5>
+					<div className={styles.storiesContent}>
+						<div>
+							<img src={vs3} alt='' />
+							<p>
+								Being part of the cricket match organizing team at GYF was an exhilarating experience. From setting up the
+								pitch to coordinating teams and ensuring a smooth event, every moment was filled with excitement. <br />
+								<br /> GYF not only promotes the sport but also uses it as a platform for community engagement. I'm grateful
+								for the opportunity to be a part of such an impactful initiative.
+							</p>
+							<h5>
+								Deep Narayan Sharma <br />
+								Software Engineer at Donyati
+							</h5>
+						</div>
 					</div>
-				</div>
+					<div className={styles.storiesContent}>
+						<div>
+							<img src='' alt='image' />{' '}
+							<p>
+								Volunteering with GYF has been a life-changing experience. The sense of fulfillment I get from contributing to
+								their initiatives is immeasurable. From participating in community outreach programs to assisting with
+								fundraising events, every moment has been meaningful. <br />
+								<br />
+								The warmth and gratitude I receive from those we help is truly humbling. Gramin Youth Foundation is an
+								organization that embodies compassion, and I am grateful to be a part of their mission.
+							</p>
+							<h5>
+								Nochetlong Tzudir <br />
+								M.A (History) Batch-2022-24 <br />
+								Amity University, UP
+							</h5>
+						</div>
+					</div>
+
+					{/* Add the third testimonial here */}
+				</Carousel>
 			</div>
 		</div>
+		// </div>
 	);
 };
 

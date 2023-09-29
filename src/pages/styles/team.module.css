@@ -1,8 +1,10 @@
 .team {
-	/* border: 1px solid; */
+	margin: auto;
 	min-height: 80vh;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	width: 85%;
 	gap: 20px;
 	padding: 30px;
 }
@@ -12,13 +14,18 @@
 	flex-direction: column;
 	min-height: 40vh;
 	border-bottom: 1px solid;
-	padding: 10px;
+	padding: 20px;
+	width: 90%;
+}
+.box > h2 {
+	font-size: xx-large;
 }
 .members {
 	display: flex;
 	padding: 10px;
 	width: 100%;
 	flex-wrap: wrap;
+	gap: 40px;
 	justify-content: space-around;
 	/* border: 1px solid; */
 	min-height: 35vh;
@@ -32,18 +39,32 @@
 	align-items: center;
 	min-height: 30vh;
 	box-shadow: 1px 1px 8px black;
-	width: 17%;
+	width: 15em;
 }
 .members > div > img {
 	height: 35vh;
 	width: 100%;
 }
+.members > div > p {
+	font-family: emoji;
+	font-weight: 800;
+	text-align: center;
+}
 @media (max-width: 768px) {
 	.members {
-		flex-direction: column;
+		/* flex-direction: column; */
 		gap: 20px;
 	}
 	.members > div {
+		min-height: 96px;
+		width: min-content;
+	}
+	.members > div > img {
+		height: 16vh;
+		width: 128px;
+		font-size: small;
+	}
+	.team {
 		width: auto;
 	}
 }

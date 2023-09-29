@@ -41,7 +41,7 @@ const Footer = () => {
 								</a>{' '}
 								&nbsp; , by phone, or by filling out the contact form. We look forward to hearing from you!
 							</p>
-							<h3>🏢 Contact Us</h3>
+							<h3> Contact Us</h3>
 							<p>
 								<b>Registered Office </b>: Sobhan, Shankarpur, Darbhanga, Bihar PIN- 846005 <br />
 								<br />
