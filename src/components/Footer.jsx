@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from './footer.module.css';
 import useMediaQuery from '@mui/material/useMediaQuery';
-
+import insta from '../assets/insta.png';
+import linkdin from '../assets/linkdin.png';
+import youtube from '../assets/youtube.png';
+import BusinessIcon from '@mui/icons-material/Business';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 const Footer = () => {
 	const isSmallScreen = useMediaQuery('(max-width: 768px)');
 	return (
@@ -9,7 +14,10 @@ const Footer = () => {
 			{' '}
 			<div className={styles.footer}>
 				<div id='donate-section'>
-					<h2>Support Us</h2>
+					<h2>
+						<VolunteerActivismIcon style={{ fontSize: '40px', marginBottom: '-3px' }} />
+						&nbsp;Support Us
+					</h2>
 					<div className={styles.hr}></div>
 					<h3>Support us in nurturing future leaders!</h3>
 					<p>
@@ -41,7 +49,10 @@ const Footer = () => {
 								</a>{' '}
 								&nbsp; , by phone, or by filling out the contact form. We look forward to hearing from you!
 							</p>
-							<h3> Contact Us</h3>
+							<h2>
+								{' '}
+								<BusinessIcon /> Contact Us
+							</h2>
 							<p>
 								<b>Registered Office </b>: Sobhan, Shankarpur, Darbhanga, Bihar PIN- 846005 <br />
 								<br />
@@ -51,6 +62,27 @@ const Footer = () => {
 							<a style={{ color: 'rgb(255 73 73)', fontSize: 'smaller' }} href='mailto:graminyouth.org@gmail.com'>
 								📧 graminyouth.org@gmail.com
 							</a>{' '}
+							<br />
+							<h2>
+								<BookmarkIcon /> Follow Us
+							</h2>
+							<div className={styles.social}>
+								<a href='https://twitter.com/graminyouth_ngo' target='_blank'>
+									<img
+										src='https://about.twitter.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png'
+										alt='X'
+									/>
+								</a>
+								<a href='https://www.instagram.com/graminyouth_ngo/' target='_blank'>
+									<img src={insta} alt='Insta' />
+								</a>
+								<a href='https://www.linkedin.com/in/gramin-youth-foundation-267453262/' target='_blank'>
+									<img src={linkdin} alt='' />
+								</a>
+								<a href='https://www.youtube.com/@graminyouthtv' target='_blank'>
+									<img style={{ height: '35px' }} src={youtube} alt='' />
+								</a>
+							</div>{' '}
 							<br />
 							<br />
 							<div className={isSmallScreen ? 'visible-on-small' : 'hidden-on-small'}>

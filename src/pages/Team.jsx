@@ -14,6 +14,8 @@ import d7 from './assets/d7.jpg';
 import d8 from './assets/d8.jpg';
 import d9 from './assets/d9.jpg';
 import d10 from './assets/d10.jpg';
+import d11 from './assets/d11.jpg';
+
 import v1 from './assets/v1.jpg';
 import v2 from './assets/v2.jpg';
 import v3 from './assets/v3.jpg';
@@ -23,16 +25,24 @@ import v5 from './assets/v5.jpg';
 import v7 from './assets/v7.jpg';
 import v8 from './assets/v8.jpg';
 import v9 from './assets/v9.jpg';
-import v10 from './assets/v9.jpg';
+import v99 from './assets/v99.jpg';
+import v11 from './assets/v11.jpg';
+import v12 from './assets/v12.jpg';
 
 import vs1 from './assets/vs1.jpg';
 import vs3 from './assets/vs3.png';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import GavelIcon from '@mui/icons-material/Gavel';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 const Team = () => {
 	return (
 		<div className={styles.team}>
 			<div className={styles.box}>
-				<h2>Board of Trustee</h2>
+				<h2>
+					<GavelIcon style={{ fontSize: 'xx-large', marginRight: '10px', marginBottom: '-2px' }} />
+					&nbsp;Board of Trustee
+				</h2>
 				<div className={styles.members}>
 					<div>
 						<img src={bt1} alt='' />
@@ -67,52 +77,103 @@ const Team = () => {
 			</div>
 
 			<div className={styles.box}>
-				<h2>Board of Directors</h2>
+				<h2>
+					{' '}
+					<BusinessCenterIcon style={{ fontSize: 'xx-large', marginRight: '10px', marginBottom: '-2px' }} />
+					Board of Directors
+				</h2>
 				<div className={styles.members}>
 					<div>
+						<img src={d8} alt='' />
+						<p>
+							Udit Guleria
+							<br />
+							<i>(Program Manager)</i>
+						</p>
+					</div>
+					<div>
 						<img src={d1} alt='' />
-						<p>Shahrukh Khan </p>
+						<p>
+							Shahrukh Khan <br />
+							<i>(Partnerships and collabration manager)</i>
+						</p>
 					</div>
 					<div>
 						<img src={d6} alt='' />
-						<p>Sandesh B </p>
+						<p>
+							Sandesh B <br />
+							<i>(Career Guidance Counsellor)</i>
+						</p>
 					</div>
 					<div>
 						<img src={d2} alt='' />
-						<p>Medari Venkatesh</p>
+						<p>
+							Medari Venkatesh
+							<br />
+							<i>(Data and Research Analyst)</i>
+						</p>
 					</div>
 					<div>
 						<img src={d3} alt='' />
-						<p>Nadir Khan</p>
+						<p>
+							Nadir Khan
+							<br />
+							<i>(Fundraising and development officer)</i>
+						</p>
 					</div>
 					<div>
 						<img src={d4} alt='' />
-						<p>Vidhi Pareek</p>
+						<p>
+							Vidhi Pareek
+							<br />
+							<i>(Social Media Head)</i>
+						</p>
 					</div>
 					<div>
+						<img src={vs1} alt='' />
+						<p>
+							Arijit Mandal
+							<br />
+							<i>(UI Developer)</i>
+						</p>
+					</div>{' '}
+					<div>
+						<img src={d11} alt='' />
+						<p>
+							Md Saquib Raza
+							<br />
+							<i>(Placement Coordinator)</i>
+						</p>
+					</div>{' '}
+					<div>
 						<img src={d5} alt='' />
-						<p>Safee Uzzama </p>
+						<p>
+							Safee Uzzama <br />
+							<i>(Education and Training Coordinator)</i>
+						</p>
 					</div>
 					<div>
 						<img src={d7} alt='' />
-						<p>Rohit Reddy </p>
-					</div>
-					<div>
-						<img src={d8} alt='' />
-						<p>Udit Guleria</p>
-					</div>
-					<div>
-						<img src={d9} alt='' />
-						<p>Ankit Singh </p>
+						<p>
+							Rohit Reddy
+							<br />
+							<i>(Event and Workshop Coordinator)</i>{' '}
+						</p>
 					</div>
 					<div>
 						<img src={d10} alt='' />
-						<p>Nishant Kumar </p>
+						<p>
+							Nishant Kumar <br />
+							<i>(Technology and Innovation Director)</i>
+						</p>
 					</div>
 				</div>
 			</div>
 			<div className={styles.box}>
-				<h2>Volunteers</h2>
+				<h2>
+					<VolunteerActivismIcon style={{ fontSize: 'xx-large', marginRight: '10px', marginBottom: '-2px' }} />
+					&nbsp;Our Volunteers
+				</h2>
 				<div className={styles.members}>
 					<div>
 						<img src={v1} alt='' />
@@ -131,6 +192,10 @@ const Team = () => {
 						<p>Azharuddin</p>
 					</div>{' '}
 					<div>
+						<img src={d9} alt='' />
+						<p>Ankit Singh </p>
+					</div>
+					<div>
 						<img src={v5} alt='' />
 						<p>Iqbal Hussain</p>
 					</div>{' '}
@@ -139,7 +204,7 @@ const Team = () => {
 						<p>Lawrence Engti</p>
 					</div>{' '}
 					<div>
-						<img src={v10} alt='' />
+						<img src={v99} alt='' />
 						<p>Ankit Srivastava</p>
 					</div>{' '}
 					<div>
@@ -147,12 +212,16 @@ const Team = () => {
 						<p>Saumya Desai</p>
 					</div>{' '}
 					<div>
-						<img src={v6} alt='' />
-						<p>Anurag Singh</p>
+						<img src={v11} alt='' />
+						<p>Shailendra Singh</p>
 					</div>{' '}
 					<div>
-						<img src={vs1} alt='' />
-						<p>Arijit Mandal</p>
+						<img src={v12} alt='' />
+						<p>Junaid Ali</p>
+					</div>{' '}
+					<div>
+						<img src={v6} alt='' />
+						<p>Anurag Singh</p>
 					</div>{' '}
 					<div>
 						<img src={vs3} alt='' />

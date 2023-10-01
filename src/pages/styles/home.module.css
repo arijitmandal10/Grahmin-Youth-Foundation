@@ -3,7 +3,7 @@
 	height: auto;
 	margin: auto;
 	/* width: 85%; */
-	background: #0d9551;
+	background: linear-gradient(168deg, #008d22e3, #000000);
 	background-size: cover;
 	/* background-image: linear-gradient(45deg, rgb(0 0 0 / 84%) 0%, rgb(0 0 0 / 53%) 100%), url(/src/pages/assets/home-img.jpg); */
 	/* background: black; */
@@ -39,13 +39,14 @@
 .main > img {
 	height: 50vh;
 	margin: auto;
+	/* animation: fadeIn 3s ease-in 1; */
 }
 .main > div > h1 {
 	font-size: 59px;
 	line-height: 100px;
 	opacity: 0.9;
 	color: white;
-	animation: fadeIn 3s ease-in-out 1;
+	animation: fadeIn 3s ease-in 1;
 }
 
 /* @keyframes rainbow-animation {
@@ -99,7 +100,7 @@
 }
 .mid > h1 {
 	margin-bottom: 20px;
-	margin-top: 6%;
+	margin-top: 3%;
 }
 /* 
 .mid::before {
@@ -131,10 +132,10 @@
 }
 
 .mid > div > p {
-	width: 76%;
+	width: 56%;
 	font-size: 20px;
 	font-weight: 400;
-	animation: fadeIn 3s ease 1;
+	animation: fadeIn 3s ease-in 1;
 }
 
 @keyframes fadeIn {
@@ -153,7 +154,8 @@
 }
 
 .image img {
-	height: 25em;
+	border-radius: 50%;
+	height: 27em;
 }
 .image {
 	display: contents;
@@ -166,6 +168,7 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: 5em;
+	margin-bottom: 50px;
 	width: 90%;
 }
 .bottom > h1 {

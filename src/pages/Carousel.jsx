@@ -51,7 +51,7 @@ const MyCarousel = () => {
 
 			<div className={styles.carousel2} id='gallery'>
 				<div className='heading'>
-					<PhotoCameraIcon style={{ fontSize: '40px' }} /> Gallery
+					<PhotoCameraIcon style={{ fontSize: '40px', marginBottom: '-3px' }} /> Gallery
 				</div>
 				<div className='hr'></div>
 				<Carousel

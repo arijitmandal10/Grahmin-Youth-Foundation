@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles/home.module.css';
 import MyCarousel from './Carousel';
 import splide7 from './assets/splide7.jpg';
+import homeimg from './assets/home-img.jpg';
 import vs3 from './assets/vs3.png';
 import vs1 from './assets/vs1.jpg';
 import HubIcon from '@mui/icons-material/Hub';
@@ -10,6 +11,8 @@ import Groups3Icon from '@mui/icons-material/Groups3';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import BadgeIcon from '@mui/icons-material/Badge';
+import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
+// import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel styles
 const Home = () => {
@@ -32,6 +35,10 @@ const Home = () => {
 				<h1 id='about-us'>About Us</h1>
 				<div className={styles.hr} style={{ width: '10%', background: 'red' }}></div>
 				<div>
+					<div className={styles.image}>
+						<img src={homeimg} alt='' />
+						{/* <img src={homeimg4} alt='' /> */}
+					</div>
 					<p>
 						Gramin youth foundation is a non-profit youth led organisation working for the upliftment of rural youth. We work
 						towards empowering them with skills and knowledge so that they can lead a better life. <br /> <br />
@@ -43,10 +50,6 @@ const Home = () => {
 						We strongly believe that every individual has the potential to succeed if given the right opportunity and platform. Our
 						goal is to provide rural youth with the necessary skills and education so that they can lead a better life.
 					</p>
-					<div className={styles.image}>
-						{/* <img src={homeimg3} alt='' />
-						<img src={homeimg4} alt='' /> */}
-					</div>
 				</div>
 			</div>
 			{/* WHAT WE DO */}
@@ -127,7 +130,9 @@ const Home = () => {
 			{/* Impact Stories */}
 
 			<div className={styles.stories}>
-				<h1> Volunteer Speak</h1>
+				<h1>
+					<SpeakerNotesIcon style={{ fontSize: '40px', marginBottom: '-3px' }} /> Volunteer Speak
+				</h1>
 				<div className={styles.hr} style={{ background: 'red', width: '10%', marginBottom: '37px' }}></div>
 				{/* <div > */}{' '}
 				<Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay>
