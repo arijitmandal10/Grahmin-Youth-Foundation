@@ -57,14 +57,15 @@
 	}
 	.members > div {
 		min-height: 96px;
-		width: min-content;
+		width: 161px;
 	}
 	.members > div > img {
 		height: 16vh;
-		width: 128px;
 		font-size: small;
 	}
 	.team {
-		width: auto;
+		width: 100%;
+		padding: 0px;
+		gap: 0px;
 	}
 }

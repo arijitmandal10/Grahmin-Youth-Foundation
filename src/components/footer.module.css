@@ -57,15 +57,22 @@
 	justify-content: space-around;
 	opacity: 0.8;
 }
+.logo {
+	height: 150px;
+	transition: transform 0.3s ease, color 0.3s ease;
+	box-shadow: 1px 1px 15px black;
+	border-radius: 49%;
+	background: #fad7d7;
+	padding: 10px;
+}
 
 .contact {
-	background: #baf9ff6b;
+	background: #00d22b7d;
 	width: 90%;
 	color: black;
 	margin: auto;
 	margin-block: 30px;
 	box-shadow: 1px 1px 16px black;
-	padding: 20px;
 	/* padding-bottom: 80px; */
 	display: flex;
 	flex-direction: column;
@@ -74,24 +81,36 @@
 .details {
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	gap: 8%;
+	justify-content: flex-start;
+	padding-right: 20px;
+	gap: 20px;
 	margin-block: 20px;
 }
-.details > form {
-	width: 40%;
+.details > div:first-child {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	flex: 1;
+	border-right: 3px solid rgba(0, 0, 0, 0.296);
+}
+.details > div:last-child {
+	flex: 0.8;
+}
+.details > div > form {
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 20px;
 }
-.details > form > input {
+.details > div > form > input {
 	padding: 10px;
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	background: none;
 	border: none;
 	color: rgb(0, 0, 0);
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgb(255, 100, 100);
 	border-bottom-right-radius: 10px;
 	font-size: 17px;
 	/* background: #daffff21; */
@@ -104,14 +123,17 @@ textarea {
 	/* background: #daffff21; */
 	color: white;
 	border: none;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgb(245, 99, 99);
 	border-bottom-right-radius: 10px;
 }
 .address {
-	width: 32%;
+	/* width: 32%; */
+	/* border-bottom: 3px solid rgba(0, 0, 0, 0.296); */
+	padding-block: 45px;
 }
 .address > div {
 	display: flex;
+	padding: 10px;
 	justify-content: center;
 	flex-direction: column;
 }
@@ -127,6 +149,7 @@ textarea {
 	display: flex;
 	align-items: center;
 	gap: 17px;
+	justify-content: center;
 }
 .address > div > p,
 .address > p {
@@ -135,16 +158,23 @@ textarea {
 /* Styles for screens with a maximum width of 768 pixels (typical for small screens) */
 @media (max-width: 768px) {
 	.details {
+		padding: 0px;
 		flex-direction: column-reverse;
 	}
 	.details > form {
 		width: 100%;
 		height: 27vh;
 	}
+	/* .address > div {
+		align-items: center;
+	} */
 	.address {
 		width: 100%;
-
+		padding: 0px;
 		font-size: small;
+	}
+	.details > div:first-child {
+		border: none;
 	}
 	/* .contact {
 		background: #03a554;

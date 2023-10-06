@@ -15,6 +15,7 @@ import d8 from './assets/d8.jpg';
 import d9 from './assets/d9.jpg';
 import d10 from './assets/d10.jpg';
 import d11 from './assets/d11.jpg';
+import d12 from './assets/d12.jpg';
 
 import v1 from './assets/v1.jpg';
 import v2 from './assets/v2.jpg';
@@ -28,6 +29,9 @@ import v9 from './assets/v9.jpg';
 import v99 from './assets/v99.jpg';
 import v11 from './assets/v11.jpg';
 import v12 from './assets/v12.jpg';
+import v13 from './assets/v13.jpg';
+import v14 from './assets/v14.jpg';
+import v15 from './assets/v15.jpg';
 
 import vs1 from './assets/vs1.jpg';
 import vs3 from './assets/vs3.png';
@@ -167,6 +171,13 @@ const Team = () => {
 							<i>(Technology and Innovation Director)</i>
 						</p>
 					</div>
+					<div>
+						<img src={d12} alt='' />
+						<p>
+							Bibhudutta Bhoi <br />
+							<i>(Content Writer)</i>
+						</p>
+					</div>
 				</div>
 			</div>
 			<div className={styles.box}>
@@ -222,6 +233,18 @@ const Team = () => {
 					<div>
 						<img src={v6} alt='' />
 						<p>Anurag Singh</p>
+					</div>{' '}
+					<div>
+						<img src={v13} alt='' />
+						<p>Manjit Yadav</p>
+					</div>{' '}
+					<div>
+						<img src={v14} alt='' />
+						<p>AAnupam Mishra</p>
+					</div>{' '}
+					<div>
+						<img src={v15} alt='' />
+						<p>//</p>
 					</div>{' '}
 					<div>
 						<img src={vs3} alt='' />

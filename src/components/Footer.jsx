@@ -7,6 +7,7 @@ import youtube from '../assets/youtube.png';
 import BusinessIcon from '@mui/icons-material/Business';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import logo from '../assets/logo.png';
 const Footer = () => {
 	const isSmallScreen = useMediaQuery('(max-width: 768px)');
 	return (
@@ -31,12 +32,16 @@ const Footer = () => {
 				{/* <div className='heading'>Contact Us</div> */}
 				{/* <div className='hr' style={{ background: 'red', marginBottom: '10px' }}></div> */}
 				<div className={styles.details}>
-					<form action={import.meta.env.VITE_API_URL} method='post'>
-						<input type='text' name='Name' placeholder='Enter your name' required />
-						<input type='email' name='Email' placeholder='Enter your email' required />
-						<textarea name='Message' id='' cols='30' rows='5' placeholder='feedback'></textarea>
-						<button>Send Message</button>
-					</form>
+					<div>
+						{' '}
+						<img src={logo} className={styles.logo} alt='' />
+						<form action={import.meta.env.VITE_API_URL} method='post'>
+							<input type='text' name='Name' placeholder='Enter your name' required />
+							<input type='email' name='Email' placeholder='Enter your email' required />
+							<textarea name='Message' id='' cols='30' rows='5' placeholder='feedback'></textarea>
+							<button>Send Message</button>
+						</form>
+					</div>
 
 					<div className={styles.address}>
 						<div>
@@ -49,7 +54,7 @@ const Footer = () => {
 								</a>{' '}
 								&nbsp; , by phone, or by filling out the contact form. We look forward to hearing from you!
 							</p>
-							<h2>
+							<h2 style={{ textAlign: 'center' }}>
 								{' '}
 								<BusinessIcon /> Contact Us
 							</h2>
@@ -63,7 +68,7 @@ const Footer = () => {
 								📧 graminyouth.org@gmail.com
 							</a>{' '}
 							<br />
-							<h2>
+							<h2 style={{ textAlign: 'center' }}>
 								<BookmarkIcon /> Follow Us
 							</h2>
 							<div className={styles.social}>
@@ -86,7 +91,7 @@ const Footer = () => {
 							<br />
 							<br />
 							<div className={isSmallScreen ? 'visible-on-small' : 'hidden-on-small'}>
-								<h3>📝 Write to us</h3>
+								<h2 style={{ width: '100%', textAlign: 'center', borderTop: '3px solid' }}>✒️ Write to us</h2>
 							</div>
 						</div>
 					</div>
