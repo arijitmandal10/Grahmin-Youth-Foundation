@@ -12,7 +12,6 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import BadgeIcon from '@mui/icons-material/Badge';
 import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
-// import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel styles
 const Home = () => {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import styles from './nav.module.css';
 import logo from '../assets/logo.png';
 import insta from '../assets/insta.png';
@@ -6,8 +7,7 @@ import linkdin from '../assets/linkdin.png';
 import youtube from '../assets/youtube.png';
 import X from '../assets/X.png';
 import MyDrawer from './MyDrawer';
-import useMediaQuery from '@mui/material/useMediaQuery'; // Import the useMediaQuery hook from Material-UI
-import { Link } from 'react-router-dom';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Nav = () => {
 	const navItems = [
@@ -33,17 +33,17 @@ const Nav = () => {
 		{
 			text: 'Instagram',
 			url: 'https://www.instagram.com/graminyouth_ngo/',
-			icon: insta, // Assuming 'insta' is the import for the Instagram icon
+			icon: insta,
 		},
 		{
 			text: 'LinkedIn',
 			url: 'https://www.linkedin.com/in/gramin-youth-foundation-267453262/',
-			icon: linkdin, // Assuming 'linkdin' is the import for the LinkedIn icon
+			icon: linkdin,
 		},
 		{
 			text: 'YouTube',
 			url: 'https://www.youtube.com/@graminyouthtv',
-			icon: youtube, // Assuming 'youtube' is the import for the YouTube icon
+			icon: youtube,
 		},
 	];
 
@@ -53,7 +53,10 @@ const Nav = () => {
 			section.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
+
 	const isSmallScreen = useMediaQuery('(max-width:765px)');
+	const location = useLocation();
+	const isTeamPage = location.pathname === '/team';
 
 	return (
 		<div className={styles.nav} id='nav'>
@@ -66,15 +69,15 @@ const Nav = () => {
 				</Link>
 			</div>
 			<div className={styles.pages}>
-				<p onClick={() => scrollToSection('about-us')}>About Us</p>
+				{!isTeamPage && <p onClick={() => scrollToSection('about-us')}>About Us</p>}
+				{!isTeamPage && (
+					<p>
+						<Link to='/team'>Our Team</Link>
+					</p>
+				)}
+				{!isTeamPage && <p>Projects</p>}
+				{!isTeamPage && <p onClick={() => scrollToSection('gallery')}>Gallery</p>}
 				<p>
-					{' '}
-					<Link to='/team'>Our Team</Link>{' '}
-				</p>
-				<p>Projects</p>
-				<p onClick={() => scrollToSection('gallery')}>Gallery</p>
-				<p>
-					{' '}
 					<a
 						href='https://docs.google.com/forms/d/e/1FAIpQLScWm4TeqOOx31VfIUUcC6-2yRZibfH-Mm6SncgnMZ5hijq29w/viewform?vc=0&c=0&w=1&flr=0'
 						target='_blank'
@@ -85,18 +88,11 @@ const Nav = () => {
 				<p onClick={() => scrollToSection('contact-section')}>Contact Us</p>
 			</div>
 			<div className={styles.social}>
-				<a href='https://twitter.com/graminyouth_ngo' target='_blank'>
-					<img src='https://about.twitter.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png' alt='X' />
-				</a>
-				<a href='https://www.instagram.com/graminyouth_ngo/' target='_blank'>
-					<img src={insta} alt='Insta' />
-				</a>
-				<a href='https://www.linkedin.com/in/gramin-youth-foundation-267453262/' target='_blank'>
-					<img src={linkdin} alt='' />
-				</a>
-				<a href='https://www.youtube.com/@graminyouthtv' target='_blank'>
-					<img style={{ height: '35px' }} src={youtube} alt='' />
-				</a>
+				{socialMediaLinks.map((link, index) => (
+					<a key={index} href={link.url} target='_blank'>
+						<img src={link.icon} alt={link.text} />
+					</a>
+				))}
 			</div>
 			<p className={styles.donate} onClick={() => scrollToSection('donate-section')}>
 				Support Us
